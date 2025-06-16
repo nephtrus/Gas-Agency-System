@@ -1,4 +1,4 @@
-// js/auth.js
+
 
 import { auth, db } from "./firebase-config.js";
 import { sendEmail } from './send-email.js';
