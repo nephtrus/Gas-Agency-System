@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register | Gas Agency</title>
+  <link rel="stylesheet" href="css/register.css" />
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function () {
+    emailjs.init("YOUR_PUBLIC_KEY"); // Replace this
+  })();
+</script>
+
+</head>
+<body>
+  <div class="register-container">
+    <h1>📝 Register</h1>
+
+    <form id="registerForm">
+      <input type="text" id="registerName" placeholder="Full Name" required />
+      <input type="email" id="registerEmail" placeholder="Email" required />
+      <input type="password" id="registerPassword" placeholder="Password" required />
+      
+      <select id="registerRole" required>
+        <option value="">Select Role</option>
+        <option value="user">User</option>
+        <option value="admin">Admin</option>
+      </select>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <p>Already have an account? <a href="index.html">Login here</a></p>
+    
+    <div id="registerError" class="error"></div>
+  </div>
+
+  <script type="module" src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Dashboard | Gas Agency</title>
+  <link rel="stylesheet" href="css/user-dashboard.css" />
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function () {
+    emailjs.init("EQVWtuTqDnw-a_kuo");
+  })();
+</script>
+
+</head>
+<body>
+  <div class="dashboard-container">
+    <header>
+      <h2>Welcome, <span id="userName">User</span> 👋</h2>
+      <button id="logoutBtn">Logout</button>
+    </header>
+
+    <section class="balance-section">
+      <h3>🛢️ Remaining Cylinders: <span id="balanceCount">Loading...</span></h3>
+    </section>
+
+    <section class="actions">
+      <button id="bookCylinderBtn">Book New Cylinder</button>
+
+      <div class="payment-section">
+        <h4>💳 Payment Options:</h4>
+        <ul>
+          <li>📦 Cash on Delivery</li>
+          <li>📱 Pay via Paytm:
+            <img src="assets/paytm-qr.png" alt="Paytm QR" width="150" />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    
+    <section class="notice">
+        <h3>📢 Notice from Admin</h3>
+        <p id="noticeMessage">Loading latest notice...</p>
+    </section>
+
+
+    <section class="history">
+      <h4>📜 My Booking History</h4>
+      <ul id="bookingHistoryList">Loading...</ul>
+    </section>
+  </div>
+  <section class="notice-banner">
+  <h3>📢 Notice:</h3>
+  <p id="noticeText">No current notices.</p>
+</section>
+
+
+  <script type="module" src="js/user-dashboard.js"></script>
+</body>
+</html>

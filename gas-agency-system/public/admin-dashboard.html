@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard | Gas Agency</title>
+  <link rel="stylesheet" href="css/admin-dashboard.css" />
+</head>
+<body>
+  <div class="admin-container">
+    <header>
+      <h2>Welcome Admin 👨‍💼</h2>
+      <button id="logoutBtn">Logout</button>
+    </header>
+
+    <section class="notice-section">
+      <h3>📢 Post Global Notice</h3>
+      <textarea id="noticeInput" placeholder="Write a message..."></textarea>
+      <button id="postNoticeBtn">Post Notice</button>
+    </section>
+
+    <section class="user-section">
+      <h3>👥 Registered Users</h3>
+      <ul id="userList">Loading...</ul>
+    </section>
+
+    <section class="requests-section">
+      <h3>📦 Cylinder Booking Requests</h3>
+      <ul id="bookingRequests">Loading requests...</ul>
+    </section>
+  </div>
+
+  <script type="module" src="js/admin-dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+/* css/register.css */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #f857a6, #ff5858);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.register-container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+  width: 320px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #f857a6;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  transition: border 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #f857a6;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #f857a6;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #ff5858;
+  transform: scale(1.05);
+}
+
+p {
+  margin-top: 15px;
+}
+
+a {
+  color: #f857a6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  margin-top: 10px;
+  color: red;
+  font-size: 0.9em;
+}
