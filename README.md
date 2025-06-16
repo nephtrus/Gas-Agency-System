@@ -34,7 +34,7 @@ A modern web-based gas booking system built using **HTML, CSS, JavaScript**, and
 - **Portable**: Runs the same on all environments (browser-based)
 
 ------- Live Demo- https://gasagencysystem-75013.web.app/
-![Dashboard Screenshot](gas-agency-system/public/assests/Screenshot 2025-06-16 163318.png)
+![ScreenShot](https://github.com/user-attachments/assets/718501f6-d2e6-4d05-af1d-0e4acc27ee18)
 
 
 ## 📁 Directory Structure
